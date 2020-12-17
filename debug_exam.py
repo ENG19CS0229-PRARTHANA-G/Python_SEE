@@ -47,11 +47,13 @@ def uniqueUpdate(data1, data2):
             if v1 != v2:
                 dupkeys[k]=[v1,v2]
                 # to dictionary                
-                dupKeys[k] = [v1, v2]
+                
                 # Remove (k, v1) from data1
                 del data1[k]
+                else:
+                    data1[k]=v2
          else:
-            data1[k] = v2
+            data1[k]=data1.get(k,v2)
             
                 # Add (k, v2) to data1
             
