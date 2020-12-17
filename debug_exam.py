@@ -123,6 +123,6 @@ if __name__ == '__main__':
     #2 2
     #8 7
     #5b:
-    if k in data1:
+    
         
     #5c
