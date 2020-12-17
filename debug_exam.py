@@ -45,7 +45,7 @@ def uniqueUpdate(data1, data2):
             # (k, v1) in dict1
             # Check if v1 != v2
             if v1 != v2:
-                # Add (k, [v1, v2])
+                dupkeys[k]=[v1,v2]
                 # to dictionary                
                 dupKeys[k] = [v1, v2]
                 # Remove (k, v1) from data1
@@ -57,9 +57,9 @@ def uniqueUpdate(data1, data2):
     # data2, return the dictionary
     return dupKeys
 
-'''
+
 Visualize this function on an example:
-https://tinyurl.com/...
+https://tinyurl.co'''m/...
 '''
 
 ## DO NOT MODIFY BELOW THIS LINE! ##
@@ -112,3 +112,15 @@ if __name__ == '__main__':
     print(data1)
     print(data2)
     print(dup)
+
+    
+    #5a:when key does not exist in data1,the key value pair does not get added to it.
+    # input:
+    #3 
+    #1 2
+    #2 2
+    #8 7
+    #5b:
+    if k in data1:
+        
+    #5c
